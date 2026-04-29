@@ -3,11 +3,11 @@
 public class AppointmentDto
 {
     public int Id { get; set; }
-    public int IdPatient { get; set; }
-    public int IdDoctor { get; set; }
     public DateTime AppointmentDate { get; set; }
-    public string PatientFirstName { get; set; }
-    public string PatientLastName { get; set; }
-    public string PatientEmail { get; set; }
-    public DateTime PatientDateOfBirth { get; set; }
+    public string Reason { get; set; } = string.Empty;
+    public string Status { get; set; } = string.Empty;
+    public string PatientFirstName { get; set; } = string.Empty;
+    public string PatientLastName { get; set; } = string.Empty;
+    public string PatientEmail { get; set; } = string.Empty;
+    public DateOnly PatientDateOfBirth { get; set; }
 }
